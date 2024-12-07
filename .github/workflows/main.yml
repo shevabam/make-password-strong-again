@@ -10,9 +10,7 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
+        uses: actions/checkout@v4
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
@@ -22,7 +20,7 @@ jobs:
       - name: 🏗 Build Project
         run: npm run build
       - name: 📂 Sync folders and files to the server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
