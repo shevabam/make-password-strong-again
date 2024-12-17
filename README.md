@@ -1,9 +1,11 @@
 
 # Make Password Strong Again
 
-<div style="text-align: center;"><img src="public/logo.png"></div>
+<p align="center">
+<a href="https://makepasswordstrongagain.com"><img src="public/logo.png"/></a>
+<span style="display: block; font-style: italic;">A simple generator of strong passwords.</span>
+</p>
 
-A simple generator of strong passwords.
 
 ➡️ [https://makepasswordstrongagain.com](https://makepasswordstrongagain.com)
 

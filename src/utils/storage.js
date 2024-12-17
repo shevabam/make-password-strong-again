@@ -1,5 +1,5 @@
 export function savePreferences(preferences) {
-  localStorage.setItem('makepasswordgreatagain', JSON.stringify(preferences));
+  localStorage.setItem('makepasswordstrongagain', JSON.stringify(preferences));
 }
 
 export function loadPreferences() {
@@ -13,6 +13,6 @@ export function loadPreferences() {
     excludeAmbiguous: true,
   };
 
-  const savedPrefs = localStorage.getItem('makepasswordgreatagain');
+  const savedPrefs = localStorage.getItem('makepasswordstrongagain');
   return savedPrefs ? JSON.parse(savedPrefs) : defaultPrefs;
 }
